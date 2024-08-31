@@ -72,7 +72,7 @@ const FocusTimer = ({ focus }: { focus: (e: boolean) => void }) => {
 
   const handlePushNotif = () => {
     if ("Notification" in window) {
-      const notif = new Notification("タイマー終了！");
+      new Notification("タイマー終了！");
       // プッシュ通知が表示された時に起きるイベント
       // notif.addEventListener("show", () => {
       //   // 状態によって音の有無を変える
